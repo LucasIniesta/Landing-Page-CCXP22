@@ -1,130 +1,208 @@
 /* variáveis */
 
-:root {
-    --cor-de-fundo-cabecalho: #FFD900;
-    --amarelo-letras: #f3c61f;
-    --roxo-fundo: #514988;
-    --rosa-letras: #e33881;
-    --branco: #fff;
-}
+    :root {
+        --cor-de-fundo-cabecalho: #FFD900;
+        --amarelo-letras: #f3c61f;
+        --roxo-fundo: #514988;
+        --rosa-letras: #e33881;
+        --branco: #fff;
+    }
 
 
 
-body {
-    margin: 0px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+    body {
+        margin: 0px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
 
 /* Cabeçalho */
 
-header {
-    background-color: var(--cor-de-fundo-cabecalho);
-    padding: 30px 0px 30px 50px;
-}
+    header {
+        background-color: var(--cor-de-fundo-cabecalho);
+        padding: 30px 0px 30px 50px;
+    }
 
-/* Corpo */ 
+    /* Corpo */ 
 
-section {
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: 40% 60%;
-}
+    section {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 40% 60%;
+    }
 
-#descricao {
-    text-align: center;
-    padding: 0px;
-    background-color: var(--roxo-fundo);
-    color: var(--branco);
-    font-size: 29px;
-    font-weight: 400;
-}
+    #descricao {
+        text-align: center;
+        padding: 0px;
+        background-color: var(--roxo-fundo);
+        color: var(--branco);
+        font-size: 29px;
+        font-weight: 400;
+    }
 
-#descricao h1 {
-    line-height: 85px;
-    margin-top: 15px;
-    font-size: 30px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
+    #descricao h1 {
+        line-height: 85px;
+        margin-top: 15px;
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
 
-#descricao h1 b {
-    font-size: 70px;
-    color: var(--amarelo-letras);
-}
+    #descricao h1 b {
+        font-size: 70px;
+        color: var(--amarelo-letras);
+    }
 
-#descricao p {
-    padding-top: 50px;
-}
+    #descricao p {
+        padding-top: 50px;
+    }
 
-#contDown {
-    display: flex;
-    justify-content: space-around;
-}
+    #contDown {
+        display: flex;
+        justify-content: space-around;
+    }
 
-.tempos {
-    display: flex;
-    color: var(--roxo-fundo);
-    font-size: 50px;
-    font-weight: 700;
-}
+    .tempos {
+        display: flex;
+        color: var(--roxo-fundo);
+        font-size: 50px;
+        font-weight: 700;
+    }
 
-.tempos h1 {
-    margin: 40px 0 0 0 ;
-}
+    .tempos h1 {
+        margin: 40px 0 0 0 ;
+    }
 
-#frase h2 {
-    margin: 0px;
-    padding-bottom: 20px;
-    font-size: 30px;
-    color: var(--rosa-letras);
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    padding-left: 5%;
-}
+    #frase h2 {
+        margin: 0px;
+        padding-bottom: 20px;
+        font-size: 30px;
+        color: var(--rosa-letras);
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        padding-left: 5%;
+    }
 
-#interativo {
-    padding-left: 20px;
-    padding-right: 20px;
-}
+    #interativo {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
-h4 {
-    font-weight: 700;
-    font-size: 27px;
-    color: var(--amarelo-letras);
-    text-transform: uppercase;
-    padding-left: 5% ;
-}
+    h4 {
+        font-weight: 700;
+        font-size: 27px;
+        color: var(--amarelo-letras);
+        text-transform: uppercase;
+        padding-left: 5% ;
+    }
 
 /* Rodapé */
 
-footer {
-    display: flex;
-    align-items: center;
-    width: 90%;
-    margin: auto;
-    padding-bottom: 30px;
-    justify-content: space-between;
-}
+    footer {
+        display: flex;
+        align-items: center;
+        width: 90%;
+        margin: auto;
+        padding-bottom: 30px;
+        justify-content: space-between;
+    }
 
 
-button {
-    background-color: var(--roxo-fundo);
-    color: var(--branco);
-    border: 0px;
-    border-radius: 10px;
-    width: 600px;
-    height: 150px;
-    font-size: 42px ;
-    font-weight: 700;
-    text-transform: uppercase;
-}
+    button {
+        background-color: var(--roxo-fundo);
+        color: var(--branco);
+        border: 0px;
+        border-radius: 10px;
+        width: 600px;
+        height: 150px;
+        font-size: 42px ;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
 
-button:hover {
-    cursor: pointer;
-    color: var(--amarelo-letras);
-}
+    button:hover {
+        cursor: pointer;
+        color: var(--amarelo-letras);
+    }
 
-footer img:hover {
-    cursor: pointer;;
-}
+    footer img:hover {
+        cursor: pointer;
+    }
+
+/* Media Query */ 
+
+    @media (max-width: 768px) {
+        header {
+            background-color: var(--cor-de-fundo-cabecalho);
+            text-align: center;
+            padding:30px 0 30px 0;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .tempos {
+            font-size: 20px;
+        }
+
+        .tempos h1 {
+            margin: 5px 0 0 0 ;
+            text-align: center;
+        }
+
+        #frase h2 {
+            margin: 0px;
+            padding-bottom: 5px;
+            font-size: 12px;
+            letter-spacing: 0px;
+            text-align: center;
+        }
+        
+        #interativo {
+            padding: 0px 5px 5px 5px;
+        }
+
+        #descricao {
+            font-size: 15px;
+            font-weight: 400;
+        }
+    
+        #descricao h1 {
+            line-height: 35px;
+            font-size: 15px;
+        }
+    
+        #descricao h1 b {
+            font-size: 30px;
+        }
+
+        #descricao p {
+            padding-top: 0;
+        }
+        
+        h4 {
+            font-size: 15px;
+            padding-left: 0 ;
+            text-align: center;
+        }
+
+        footer {
+            display: inline-block;
+            text-align: center;
+        }
+        
+        footer img {
+            width: 40%;
+            padding-bottom: 40px;
+        }
+
+        button {
+            border-radius: 10px;
+            width: 90%;
+            height: 80px;
+            font-size: 20px ;
+        }
+    
+    }
